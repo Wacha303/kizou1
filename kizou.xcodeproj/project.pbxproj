@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CD8916E5491FC825CC3DDE1 /* Pods_kizou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7277C877A051B12CF6F6CB2E /* Pods_kizou.framework */; };
+		37CE82D0DFBBC8453EEDF781 /* Pods_kizouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B49E414A41924692457E8C1 /* Pods_kizouTests.framework */; };
+		520DA5C522153C7600610E63 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DA5C322153C7600610E63 /* ViewController2.swift */; };
+		520DA5C622153C7600610E63 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5C422153C7600610E63 /* ViewController2.xib */; };
+		520DA5CD2217F96500610E63 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DA5CB2217F96500610E63 /* SearchViewController.swift */; };
+		520DA5CE2217F96500610E63 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5CC2217F96500610E63 /* SearchViewController.xib */; };
+		520DA5D52218366900610E63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DA5D32218366900610E63 /* HomeViewController.swift */; };
+		520DA5D62218366900610E63 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5D42218366900610E63 /* HomeViewController.xib */; };
 		5277153E21F04E9800B50EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277153D21F04E9800B50EDE /* AppDelegate.swift */; };
-		5277154021F04E9800B50EDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277153F21F04E9800B50EDE /* ViewController.swift */; };
+		5277154021F04E9800B50EDE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277153F21F04E9800B50EDE /* MainTabBarController.swift */; };
 		5277154321F04E9800B50EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277154121F04E9800B50EDE /* Main.storyboard */; };
 		5277154521F04E9A00B50EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5277154421F04E9A00B50EDE /* Assets.xcassets */; };
 		5277154821F04E9A00B50EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277154621F04E9A00B50EDE /* LaunchScreen.storyboard */; };
 		5277155321F04E9A00B50EDE /* kizouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277155221F04E9A00B50EDE /* kizouTests.swift */; };
 		5277155E21F04E9B00B50EDE /* kizouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277155D21F04E9B00B50EDE /* kizouUITests.swift */; };
+		86B1E5AACB7C699F5F018261 /* Pods_kizouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3AC4CA657DCACC23347F86 /* Pods_kizouUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DED96393B9A6818560C22E /* Pods-kizouUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizouUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kizouUITests/Pods-kizouUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA86C110BD8EEFC72BD2FB6 /* Pods-kizouUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizouUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kizouUITests/Pods-kizouUITests.release.xcconfig"; sourceTree = "<group>"; };
+		520DA5C322153C7600610E63 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		520DA5C422153C7600610E63 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		520DA5CB2217F96500610E63 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		520DA5CC2217F96500610E63 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		520DA5D32218366900610E63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		520DA5D42218366900610E63 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		5277153A21F04E9800B50EDE /* kizou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kizou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277153D21F04E9800B50EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5277153F21F04E9800B50EDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5277153F21F04E9800B50EDE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5277154221F04E9800B50EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5277154421F04E9A00B50EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5277154721F04E9A00B50EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 		5277155921F04E9A00B50EDE /* kizouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kizouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277155D21F04E9B00B50EDE /* kizouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kizouUITests.swift; sourceTree = "<group>"; };
 		5277155F21F04E9B00B50EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE6B2FFC65E4911D59254FA /* Pods-kizou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizou.release.xcconfig"; path = "Pods/Target Support Files/Pods-kizou/Pods-kizou.release.xcconfig"; sourceTree = "<group>"; };
+		7277C877A051B12CF6F6CB2E /* Pods_kizou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kizou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3AC4CA657DCACC23347F86 /* Pods_kizouUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kizouUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B49E414A41924692457E8C1 /* Pods_kizouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kizouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC217F56D6ADFE5DBB95BF25 /* Pods-kizou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kizou/Pods-kizou.debug.xcconfig"; sourceTree = "<group>"; };
+		CF2A409346933F1B7CF6A5EC /* Pods-kizouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizouTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kizouTests/Pods-kizouTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2235C88E772A3A4EB7D2BA3 /* Pods-kizouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kizouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kizouTests/Pods-kizouTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD8916E5491FC825CC3DDE1 /* Pods_kizou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CE82D0DFBBC8453EEDF781 /* Pods_kizouTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B1E5AACB7C699F5F018261 /* Pods_kizouUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,8 @@
 				5277155121F04E9A00B50EDE /* kizouTests */,
 				5277155C21F04E9A00B50EDE /* kizouUITests */,
 				5277153B21F04E9800B50EDE /* Products */,
+				A93C10EDC9FB60FBDA0F77D3 /* Pods */,
+				BABBD250487AF59E9E254BEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +127,13 @@
 			isa = PBXGroup;
 			children = (
 				5277153D21F04E9800B50EDE /* AppDelegate.swift */,
-				5277153F21F04E9800B50EDE /* ViewController.swift */,
+				5277153F21F04E9800B50EDE /* MainTabBarController.swift */,
+				520DA5D32218366900610E63 /* HomeViewController.swift */,
+				520DA5D42218366900610E63 /* HomeViewController.xib */,
+				520DA5CB2217F96500610E63 /* SearchViewController.swift */,
+				520DA5CC2217F96500610E63 /* SearchViewController.xib */,
+				520DA5C322153C7600610E63 /* ViewController2.swift */,
+				520DA5C422153C7600610E63 /* ViewController2.xib */,
 				5277154121F04E9800B50EDE /* Main.storyboard */,
 				5277154421F04E9A00B50EDE /* Assets.xcassets */,
 				5277154621F04E9A00B50EDE /* LaunchScreen.storyboard */,
@@ -125,6 +160,29 @@
 			path = kizouUITests;
 			sourceTree = "<group>";
 		};
+		A93C10EDC9FB60FBDA0F77D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC217F56D6ADFE5DBB95BF25 /* Pods-kizou.debug.xcconfig */,
+				6BE6B2FFC65E4911D59254FA /* Pods-kizou.release.xcconfig */,
+				E2235C88E772A3A4EB7D2BA3 /* Pods-kizouTests.debug.xcconfig */,
+				CF2A409346933F1B7CF6A5EC /* Pods-kizouTests.release.xcconfig */,
+				24DED96393B9A6818560C22E /* Pods-kizouUITests.debug.xcconfig */,
+				4AA86C110BD8EEFC72BD2FB6 /* Pods-kizouUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BABBD250487AF59E9E254BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7277C877A051B12CF6F6CB2E /* Pods_kizou.framework */,
+				8B49E414A41924692457E8C1 /* Pods_kizouTests.framework */,
+				7C3AC4CA657DCACC23347F86 /* Pods_kizouUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5277156221F04E9B00B50EDE /* Build configuration list for PBXNativeTarget "kizou" */;
 			buildPhases = (
+				B448D693AEE1023A57F808A9 /* [CP] Check Pods Manifest.lock */,
 				5277153621F04E9800B50EDE /* Sources */,
 				5277153721F04E9800B50EDE /* Frameworks */,
 				5277153821F04E9800B50EDE /* Resources */,
+				FAC075C0637FA7A039FD9DF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5277156521F04E9B00B50EDE /* Build configuration list for PBXNativeTarget "kizouTests" */;
 			buildPhases = (
+				EAF50B8D58A995FD8F356045 /* [CP] Check Pods Manifest.lock */,
 				5277154A21F04E9A00B50EDE /* Sources */,
 				5277154B21F04E9A00B50EDE /* Frameworks */,
 				5277154C21F04E9A00B50EDE /* Resources */,
@@ -167,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5277156821F04E9B00B50EDE /* Build configuration list for PBXNativeTarget "kizouUITests" */;
 			buildPhases = (
+				5E1AE0BF4FCD2ED3A9A62344 /* [CP] Check Pods Manifest.lock */,
 				5277155521F04E9A00B50EDE /* Sources */,
 				5277155621F04E9A00B50EDE /* Frameworks */,
 				5277155721F04E9A00B50EDE /* Resources */,
@@ -230,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5277154821F04E9A00B50EDE /* LaunchScreen.storyboard in Resources */,
+				520DA5C622153C7600610E63 /* ViewController2.xib in Resources */,
 				5277154521F04E9A00B50EDE /* Assets.xcassets in Resources */,
+				520DA5CE2217F96500610E63 /* SearchViewController.xib in Resources */,
 				5277154321F04E9800B50EDE /* Main.storyboard in Resources */,
+				520DA5D62218366900610E63 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +316,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E1AE0BF4FCD2ED3A9A62344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kizouUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B448D693AEE1023A57F808A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kizou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF50B8D58A995FD8F356045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kizouTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC075C0637FA7A039FD9DF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kizou/Pods-kizou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kizou/Pods-kizou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5277153621F04E9800B50EDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5277154021F04E9800B50EDE /* ViewController.swift in Sources */,
+				520DA5D52218366900610E63 /* HomeViewController.swift in Sources */,
+				5277154021F04E9800B50EDE /* MainTabBarController.swift in Sources */,
 				5277153E21F04E9800B50EDE /* AppDelegate.swift in Sources */,
+				520DA5CD2217F96500610E63 /* SearchViewController.swift in Sources */,
+				520DA5C522153C7600610E63 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +597,7 @@
 		};
 		5277156321F04E9B00B50EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC217F56D6ADFE5DBB95BF25 /* Pods-kizou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +616,7 @@
 		};
 		5277156421F04E9B00B50EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE6B2FFC65E4911D59254FA /* Pods-kizou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +635,7 @@
 		};
 		5277156621F04E9B00B50EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2235C88E772A3A4EB7D2BA3 /* Pods-kizouTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +657,7 @@
 		};
 		5277156721F04E9B00B50EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF2A409346933F1B7CF6A5EC /* Pods-kizouTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +679,7 @@
 		};
 		5277156921F04E9B00B50EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DED96393B9A6818560C22E /* Pods-kizouUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +700,7 @@
 		};
 		5277156A21F04E9B00B50EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA86C110BD8EEFC72BD2FB6 /* Pods-kizouUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

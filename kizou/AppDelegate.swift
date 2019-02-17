@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var naviCon: UINavigationController!
+    //UITabControllerのインスタンスを作成
+    let myTabbarController: MainTabBarController = MainTabBarController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        FirebaseApp.configure()
+        
         // Override point for customization after application launch.
+
+        //rootにtabbarControllerを設定
+        self.window!.rootViewController = myTabbarController
+        
+        //表示
+        self.window!.makeKeyAndVisible()
+//        //viewConをnaviConのrootに設定
+//        naviCon = UINavigationController(rootViewController: vc1)
+        
+//        //windowのrootをnaviConに設定
+//        self.window?.rootViewController = naviCon
+//
+//        //設定を反映
+//        self.window?.makeKeyAndVisible()
+        
+      
+        
         return true
     }
 
