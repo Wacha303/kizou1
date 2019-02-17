@@ -101,6 +101,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520DA5D722192D6100610E63 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				520DA5D32218366900610E63 /* HomeViewController.swift */,
+				520DA5CB2217F96500610E63 /* SearchViewController.swift */,
+				520DA5C322153C7600610E63 /* ViewController2.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		520DA5D822192D9B00610E63 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				520DA5D42218366900610E63 /* HomeViewController.xib */,
+				520DA5CC2217F96500610E63 /* SearchViewController.xib */,
+				520DA5C422153C7600610E63 /* ViewController2.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
 		5277153121F04E9800B50EDE = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +148,8 @@
 			children = (
 				5277153D21F04E9800B50EDE /* AppDelegate.swift */,
 				5277153F21F04E9800B50EDE /* MainTabBarController.swift */,
-				520DA5D32218366900610E63 /* HomeViewController.swift */,
-				520DA5D42218366900610E63 /* HomeViewController.xib */,
-				520DA5CB2217F96500610E63 /* SearchViewController.swift */,
-				520DA5CC2217F96500610E63 /* SearchViewController.xib */,
-				520DA5C322153C7600610E63 /* ViewController2.swift */,
-				520DA5C422153C7600610E63 /* ViewController2.xib */,
+				520DA5D722192D6100610E63 /* ViewController */,
+				520DA5D822192D9B00610E63 /* xib */,
 				5277154121F04E9800B50EDE /* Main.storyboard */,
 				5277154421F04E9A00B50EDE /* Assets.xcassets */,
 				5277154621F04E9A00B50EDE /* LaunchScreen.storyboard */,
