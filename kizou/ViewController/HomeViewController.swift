@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate {
     
     var movieTableView: UITableView!
-    
+
     init() {
         
         super.init(nibName: nil, bundle: nil)

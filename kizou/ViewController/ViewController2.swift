@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import FirebaseStorage
 
 class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
@@ -18,6 +19,32 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavig
     var imageView: UIImageView!
     var myTextField: UITextField!
     var contributeButton: UIButton!
+    var uploadImage: UIImageView!
+    var uploadButton: UIButton!
+    
+    let fileName = "USJ.jpeg"
+    
+    var imageReference: StorageReference {
+        return Storage.storage().reference().child("images")
+    }
+    
+    @objc func onUploadTapped(_ sender: Any) {
+        guard let image = uploadImage.image else { return }
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else { return }
+        let uploadImageRef = imageReference.child(fileName)
+        
+        let uploadTask = uploadImageRef.putData(imageData, metadata: nil) { (metadata, error) in
+            print("UPLOAD TASK FINISHED")
+            print(metadata ?? "NO METADATA")
+            print(error ?? "NO ERROR")
+        }
+        
+        uploadTask.observe(.progress) { (snapshot) in
+            print(snapshot.progress ?? "NO MORE PROGRESS")
+        }
+        
+        uploadTask.resume()
+    }
     
     @objc func selectImage(_ sender: Any) {
         
@@ -28,9 +55,9 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavig
          present(imagePickerController, animated: true, completion: nil)
     }
     @objc func contributeButtonPushed(_ sender: Any) {
-        print("投稿完了")
+        print("このボタン押したら、投稿完了")
     }
-   
+
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -44,7 +71,13 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         selectButton = UIButton()
+        uploadImage = UIImageView()
         
+        uploadImage.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
+        uploadImage.layer.cornerRadius = 20.0
+        uploadImage.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2 + 300)
+        uploadImage.backgroundColor = .gray
+        self.view.addSubview(uploadImage)
         // サイズを設定する.
         selectButton.frame = CGRect(x: 0, y: 0, width: 200, height: 40)
         // 背景色を設定する.
@@ -52,7 +85,7 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavig
         // 枠を丸くする.
         selectButton.layer.masksToBounds = true
         // タイトルを設定する(通常時).
-        selectButton.setTitle("動画", for: UIControl.State.normal)
+        selectButton.setTitle("動画選択", for: UIControl.State.normal)
         selectButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
         // タイトルを設定する(ボタンがハイライトされた時).
         selectButton.setTitle("ボタン(押された時)", for: UIControl.State.highlighted)
@@ -105,6 +138,15 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate, UINavig
         selectButton.addTarget(self, action: #selector(contributeButtonPushed(_:)), for: .touchUpInside)
         // ボタンをViewに追加する.
         self.view.addSubview(contributeButton)
+        
+        uploadButton = UIButton()
+        uploadButton.frame = CGRect(x: 0, y: 0, width: 200, height: 40)
+        uploadButton.layer.masksToBounds = true
+        uploadButton.backgroundColor = UIColor.gray
+        uploadButton.layer.cornerRadius = 20.0
+        uploadButton.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/2 + 100)
+        uploadButton.addTarget(self, action: #selector(onUploadTapped(_:)), for: .touchUpInside)
+        self.view.addSubview(uploadButton)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
