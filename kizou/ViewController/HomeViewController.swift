@@ -38,8 +38,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             style: .plain,
             target: self,
             action: #selector(makeProjectButtonPushed))
-        
-//        self.navigationItem.rightBarButtonItems = [refleshButtonItem]
 
     }
     @objc func makeProjectButtonPushed(_ sender: Any) {

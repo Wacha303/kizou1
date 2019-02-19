@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>55700655080-atgsa3fnb5hikhp4j5miols97hdera9k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.55700655080-atgsa3fnb5hikhp4j5miols97hdera9k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyARyDcqnqpZ3OBK5aWiT_On_WUX1V3lP7g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>55700655080</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kizou</string>
+	<key>PROJECT_ID</key>
+	<string>kizou-4786b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kizou-4786b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:55700655080:ios:7a4c42214b0ca4cc</string>
+	<key>DATABASE_URL</key>
+	<string>https://kizou-4786b.firebaseio.com</string>
+</dict>
+</plist>

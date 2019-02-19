@@ -28,16 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //表示
         self.window!.makeKeyAndVisible()
-//        //viewConをnaviConのrootに設定
-//        naviCon = UINavigationController(rootViewController: vc1)
-        
-//        //windowのrootをnaviConに設定
-//        self.window?.rootViewController = naviCon
-//
-//        //設定を反映
-//        self.window?.makeKeyAndVisible()
-        
-      
+
         
         return true
     }
