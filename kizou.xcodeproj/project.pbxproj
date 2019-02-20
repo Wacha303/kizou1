@@ -15,7 +15,7 @@
 		520DA5CE2217F96500610E63 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5CC2217F96500610E63 /* SearchViewController.xib */; };
 		520DA5D52218366900610E63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DA5D32218366900610E63 /* HomeViewController.swift */; };
 		520DA5D62218366900610E63 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5D42218366900610E63 /* HomeViewController.xib */; };
-		520DA5DA221AC2A400610E63 /* GoogleService-Info (4).plist in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5D9221AC2A400610E63 /* GoogleService-Info (4).plist */; };
+		520DA5DC221BED4500610E63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520DA5DB221BED4500610E63 /* GoogleService-Info.plist */; };
 		5277153E21F04E9800B50EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277153D21F04E9800B50EDE /* AppDelegate.swift */; };
 		5277154021F04E9800B50EDE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277153F21F04E9800B50EDE /* MainTabBarController.swift */; };
 		5277154321F04E9800B50EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277154121F04E9800B50EDE /* Main.storyboard */; };
@@ -52,7 +52,7 @@
 		520DA5CC2217F96500610E63 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		520DA5D32218366900610E63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		520DA5D42218366900610E63 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		520DA5D9221AC2A400610E63 /* GoogleService-Info (4).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (4).plist"; sourceTree = "<group>"; };
+		520DA5DB221BED4500610E63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5277153A21F04E9800B50EDE /* kizou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kizou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277153D21F04E9800B50EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5277153F21F04E9800B50EDE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				5277154421F04E9A00B50EDE /* Assets.xcassets */,
 				5277154621F04E9A00B50EDE /* LaunchScreen.storyboard */,
 				5277154921F04E9A00B50EDE /* Info.plist */,
-				520DA5D9221AC2A400610E63 /* GoogleService-Info (4).plist */,
+				520DA5DB221BED4500610E63 /* GoogleService-Info.plist */,
 			);
 			path = kizou;
 			sourceTree = "<group>";
@@ -313,10 +313,10 @@
 				5277154821F04E9A00B50EDE /* LaunchScreen.storyboard in Resources */,
 				520DA5C622153C7600610E63 /* ViewController2.xib in Resources */,
 				5277154521F04E9A00B50EDE /* Assets.xcassets in Resources */,
-				520DA5DA221AC2A400610E63 /* GoogleService-Info (4).plist in Resources */,
 				520DA5CE2217F96500610E63 /* SearchViewController.xib in Resources */,
 				5277154321F04E9800B50EDE /* Main.storyboard in Resources */,
 				520DA5D62218366900610E63 /* HomeViewController.xib in Resources */,
+				520DA5DC221BED4500610E63 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

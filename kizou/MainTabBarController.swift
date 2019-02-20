@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         //2つViewControllerを用意
         let homeViewController = HomeViewController()
         let searchViewController = SearchViewController()
