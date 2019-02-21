@@ -26,7 +26,7 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
  
    
 
-    @objc func contributeButtonPushed(_ sender: Any) {
+    @objc func toEplainButtonPushed(_ sender: Any) {
         let explainView = ExplainViewController()
         navigationController?.pushViewController(explainView, animated: true)
     }
@@ -60,7 +60,7 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
             title: "説明を追加する",
             style: .plain,
             target: self,
-            action: #selector(contributeButtonPushed(_:)))
+            action: #selector(toEplainButtonPushed(_:)))
 
 
     }

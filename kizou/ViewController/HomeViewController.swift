@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseStorage
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate {
@@ -81,15 +82,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         movieTableView.estimatedRowHeight = 120.0
     }
     
-//    func downlaodMovie() {
-//        //ダウンロードしたいファイルへの参照を作成
-//        let downloadRef = StorageRef.child("images/)
-//        
-//        //ダウンロードを開始します（この場合はファイルへの書き込み）
-//        
-//        
-//        //ステータスの変化をobserveする
-//    }
+    func downlaodMovie() {
+    
+    let storage = Storage.storage()
+    let storageRef = storage.reference(forURL: "gs://kizou-4786b.appspot.com")
+    let imageRef = storageRef.child("image.jpg")
+
+        // ダウンロード先のURLを作成
+        let localURL: URL! = URL(fileURLWithPath: "\(NSTemporaryDirectory())image.jpg")
+        
+        // ダウンロードを実行
+        imageRef.write(toFile: localURL) { url, error in
+            if (error != nil) {
+                print("Uh-oh, an error occurred!")
+            } else {
+                print("download success!!")
+            }
+        }
+    }
 
     
 }
