@@ -12,15 +12,13 @@ import MobileCoreServices
 import Firebase
 import FirebaseStorage
 
-class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let imagePickerController = UIImagePickerController()
     var videoURL: URL?
     var selectButton: UIButton!
     
     var imageView: UIImageView!
-    var myTextField: UITextField!
-    var contributeButton: UIButton!
     var uploadImage: UIImageView!
     var progressView: UIProgressView!
     
@@ -29,7 +27,8 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
    
 
     @objc func contributeButtonPushed(_ sender: Any) {
-        print("このボタン押したら、投稿完了")
+        let explainView = ExplainViewController()
+        navigationController?.pushViewController(explainView, animated: true)
     }
 
 
@@ -47,19 +46,26 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         super.viewDidLoad()
 
         setupSelectButton()
-        setupMyTextField()
-        setupContributeButton()
         
+       
         uploadImage = UIImageView()
         
-        uploadImage.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        uploadImage.frame = CGRect(x: 0, y: 0, width: 200, height: 150)
         uploadImage.layer.cornerRadius = 20.0
-        uploadImage.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2 + 300)
+        uploadImage.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2 )
         uploadImage.backgroundColor = .gray
         self.view.addSubview(uploadImage)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "説明を追加する",
+            style: .plain,
+            target: self,
+            action: #selector(contributeButtonPushed(_:)))
+
 
     }
     
+   
     func setupSelectButton() {
         selectButton = UIButton()
         // サイズを設定する.
@@ -77,7 +83,7 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         // コーナーの半径を設定する.
         selectButton.layer.cornerRadius = 20.0
         // ボタンの位置を指定する.
-        selectButton.layer.position = CGPoint(x: self.view.frame.width/2, y:200)
+        selectButton.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2 + 125)
         // タグを設定する.
         selectButton.tag = 1
         // イベントを追加する.
@@ -86,49 +92,7 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         self.view.addSubview(selectButton)
     }
     
-    func setupMyTextField() {
-        
-        myTextField = UITextField(frame: CGRect(x:0, y:0, width:200, height:30))
-        myTextField.text = ""
-        
-        myTextField.delegate = self
-        
-        // 枠の線を表示.
-        myTextField.borderStyle = UITextField.BorderStyle.roundedRect
-        
-        // UITextFieldの表示する位置.
-        myTextField.layer.position = CGPoint(x:self.view.bounds.width/2, y:self.view.bounds.height/2)
-        
-        // TextViewをviewに追加する.
-        self.view.addSubview(myTextField)
-    }
-    
-    func setupContributeButton() {
-        contributeButton = UIButton()
-        
-        // サイズを設定する.
-        contributeButton.frame = CGRect(x: 0, y: 0, width: 200, height: 40)
-        // 投稿ボタンの色を設定する.
-        contributeButton.backgroundColor = UIColor.red
-        // 枠を丸くする.
-        contributeButton.layer.masksToBounds = true
-        // タイトルを設定する(通常時).
-        contributeButton.setTitle("投稿する", for: UIControl.State.normal)
-        contributeButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        // タイトルを設定する(ボタンがハイライトされた時).
-        contributeButton.setTitle("ボタン(押された時)", for: UIControl.State.highlighted)
-        contributeButton.setTitleColor(UIColor.black, for: UIControl.State.highlighted)
-        // コーナーの半径を設定する.
-        contributeButton.layer.cornerRadius = 20.0
-        // ボタンの位置を指定する.
-        contributeButton.layer.position = CGPoint(x: self.view.frame.width/2, y:self.view.frame.height/2 + 50)
-        
-        // イベントを追加する.
-        contributeButton.addTarget(self, action: #selector(contributeButtonPushed(_:)), for: .touchUpInside)
-        // ボタンをViewに追加する.
-        self.view.addSubview(contributeButton)
-        
-    }
+   
    
     @objc func selectMovie(_ sender: UIButton) {
         imagePickerController.sourceType = .photoLibrary
@@ -137,9 +101,27 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         present(imagePickerController, animated: true, completion: nil)
     }
     
+//    func previewImageFromVideo(_ url:URL) -> UIImage? {
+//
+//        print("動画からサムネイルを生成する")
+//        let asset = AVAsset(url:url)
+//        let imageGenerator = AVAssetImageGenerator(asset:asset)
+//        imageGenerator.appliesPreferredTrackTransform = true
+//        var time = asset.duration
+//        time.value = min(time.value,2)
+//        do {
+//            let imageRef = try imageGenerator.copyCGImage(at: time, actualTime: nil)
+//            return UIImage(cgImage: imageRef)
+//        } catch {
+//            return nil
+//        }
+//    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let videoURL = info[UIImagePickerController.InfoKey.mediaURL] as? URL else { return }
+        //ファイルを作成
         let fileName = "movie.MOV"
+        //参照
         let movieRef = Storage.storage().reference().child("movie")
         let fileRef = movieRef.child(fileName)
         let uploadTask = fileRef.putFile(from: videoURL, metadata: nil) { metadata, error in
@@ -151,20 +133,6 @@ class ViewController2: UIViewController, UIImagePickerControllerDelegate, UINavi
         }
         imagePickerController.dismiss(animated: true, completion: nil)
     }
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//
-//        // 文字数最大を決める.
-//        let maxLength: Int = 30
-//
-//        // 入力済みの文字と入力された文字を合わせて取得.
-//        let str = textField.text! + string
-//
-//        // 文字数がmaxLength以下ならtrueを返す.
-//        if str.count < maxLength {
-//            return true
-//        }
-//        print("6文字を超えています")
-//        return false
-//    }
+    
 }
 

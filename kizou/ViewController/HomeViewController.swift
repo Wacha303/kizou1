@@ -32,7 +32,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         movieTableView.register(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "customMovieCell")
         configureTableView()
         self.view.addSubview(movieTableView)
-        // Do any additional setup after loading the view.
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "プロジェクトを作る",
             style: .plain,
@@ -80,6 +80,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         movieTableView.rowHeight = UITableView.automaticDimension
         movieTableView.estimatedRowHeight = 120.0
     }
+    
+//    func downlaodMovie() {
+//        //ダウンロードしたいファイルへの参照を作成
+//        let downloadRef = StorageRef.child("images/)
+//        
+//        //ダウンロードを開始します（この場合はファイルへの書き込み）
+//        
+//        
+//        //ステータスの変化をobserveする
+//    }
 
     
 }
